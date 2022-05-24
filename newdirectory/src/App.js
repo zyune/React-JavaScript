@@ -1,31 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
 import TodoList from './TodoList';
-function App() {
+import { useState, useEffect } from 'react';
+const Person=(props)=> {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Yune is learning reactjs
-    //     </a>
-    //   </header>
-    // </div>、
     <>
-      <TodoList></TodoList>
-      <input type="text"></input>
-      <button>add todo</button>
-      <button>clear completed to dos</button>
-      <div>0 left to do</div>
+      <h1>Name: {props.name}</h1>
+      <h2>Last Name: {props.ln}</h2>
+      <h2>Age :{props.age}</h2>
     </>
+)
+}
+function App() {
+  const [counter, setCounter] = useState(0) // 0 is the default value of count
+  
+  useEffect(() => {
+    alert("you have change the counter to "+counter);
+  }, [counter]);
+  return (
+
+    <>
+      <div className='App'>
+        <Person
+          name={'wwww'}
+          ln={'Yune'}
+        />
+      </div>
+      
+      <div>
+        <button onClick={()=> setCounter((prev)=>prev -1)}>-</button>
+        <h1>{counter}</h1>
+        <button onClick={()=> setCounter((prev)=>prev +1)}>+</button>
+      </div>
+    </>
+
+     
+
     
     
   );

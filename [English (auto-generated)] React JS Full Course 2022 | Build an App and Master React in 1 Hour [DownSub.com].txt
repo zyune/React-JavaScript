@@ -1,0 +1,3530 @@
+learning javascript libraries and
+
+frameworks can be overwhelming
+
+there are many libraries to choose from
+
+and no proper step-by-step guides that
+
+will teach you how to use these
+
+libraries to their fullest potential
+
+that's why in this video you'll learn
+
+the most popular javascript library used
+
+by hundreds of thousands of developers
+
+worldwide react js
+
+hi there if you want to learn everything
+
+from the essential jsx syntax all the
+
+way to more advanced react topics like
+
+state hooks data fetching and more
+
+you've come to the right place
+
+i'll first give you a high level
+
+overview of what react is and why do we
+
+even use it and then we'll quickly dive
+
+into the code create our first react.js
+
+application learn about jsx which forms
+
+the core react.js syntax and learn about
+
+the best file and folder structure when
+
+working with react
+
+most importantly in the end i'll teach
+
+you how you can build a reactions
+
+application so that you can actively
+
+internalize and independently apply
+
+everything you've learned in this video
+
+by the end you'll know precisely what
+
+you need to do to become an outstanding
+
+react developer capable of building
+
+phenomenal applications
+
+with your react skills you'll also be
+
+able to build native mobile applications
+
+isn't that crazy
+
+alongside this video i've also prepared
+
+the ultimate reactions guide that covers
+
+everything you need to know to become a
+
+fantastic developer
+
+the guide covers the complete reactions
+
+roadmap
+
+javascript prerequisites
+
+essential react.js concept and project
+
+ideas that you can build and deploy to
+
+put on your portfolio and get a job the
+
+link to the guide is in the description
+
+you can download the guide and use it as
+
+a reference on your reactions journey
+
+whenever you're unsure what to learn
+
+next of course the guide is completely
+
+free and once again the link is in the
+
+description
+
+still i'd strongly recommend that you
+
+watch this video until the end because
+
+although the guide is great as a quick
+
+reference point the video will provide
+
+you with absolutely everything you need
+
+to become a professional react web
+
+developer and of course exclusively in
+
+this video we're going to build a cool
+
+react.js application
+
+this video is brought to you by
+
+skillshare
+
+skillshare is an online learning
+
+community with thousands of inspiring
+
+classes for anyone who wants to learn
+
+new skills as i was in the process of
+
+creating the ultimate react developer
+
+roadmap as you saw in the intro i needed
+
+to revisit everything from bare
+
+beginnings
+
+that's why i browse the courses in
+
+skillshare and stumble upon react 101
+
+learn react.js for absolute beginners by
+
+caleb
+
+if you're a beginner react developer i'd
+
+strongly suggest you watch this video
+
+first and then go check out this course
+
+on skillshare to get as much knowledge
+
+as possible
+
+if you're a more experienced developer
+
+you'll love their more advanced courses
+
+if you sign up right now you can start
+
+learning for free with the unique free
+
+trial link in the description
+
+the first 1000 people to use this link
+
+are going to get a month of free
+
+skillshare once again the link is in the
+
+description
+
+[Music]
+
+react is a frontend javascript library
+
+for building user interfaces it was
+
+developed by facebook and is maintained
+
+by facebook and the open source
+
+community
+
+reactions is a phenomenal library that
+
+is easy to understand has excellent
+
+cross-platform support has a fantastic
+
+community and is one of the most loved
+
+libraries out there
+
+there are also two great reactions
+
+competitors vue.js and angular
+
+these libraries and frameworks are
+
+mainly used to create fast and efficient
+
+single page applications
+
+although these are great technologies
+
+taking a quick look at google trends we
+
+can clearly see that react.js is still
+
+in the lead by far on the stack overflow
+
+developer survey which is the biggest
+
+web development survey in the world 40
+
+of developers chose react
+
+on the state of js 2021 under front-end
+
+frameworks sorted by usage react has
+
+been in the lead for six straight years
+
+with everything i've mentioned we can
+
+safely assume that the reactions is the
+
+most popular javascript library amongst
+
+all other libraries and frameworks
+
+currently available
+
+react.js also plays a major role in the
+
+most popular programming stack mern
+
+mernstack is a javascript stack that is
+
+used for easier and faster deployment of
+
+full stack web applications
+
+it is designed to make the development
+
+process smoother and easier
+
+with the mern stack you can create
+
+absolutely any web application you can
+
+think of
+
+with that said
+
+now let's take a look at filmpire the
+
+first project-based course of the
+
+upcoming jsm pro platform which is built
+
+entirely in react
+
+here we can browse around select a
+
+category select a genre click on a movie
+
+poster to see more details about the
+
+movie and everything happens so smoothly
+
+and instantly and you can also notice
+
+that the website never reloads you can
+
+see that on the top bar
+
+which means that we don't request and
+
+load multiple html pages everything
+
+works with a single html page and that
+
+happens because everything is done using
+
+javascript and react while we browse the
+
+page react updates what we see on a
+
+document object model or dom for short
+
+but we don't update the dom directly
+
+like in html so how does it actually
+
+work in react
+
+react uses something called virtual dom
+
+so what's virtual dom a virtual dom is
+
+nothing but a javascript object it's a
+
+lightweight representation of the dom
+
+updating the virtual dom is much faster
+
+than updating the real dom
+
+thus react only updates the section of
+
+the page where the change was made not
+
+the entire page which is super efficient
+
+let me explain this in a simpler manner
+
+when something changes in a component we
+
+get a new react element
+
+react will then compare this element and
+
+the children of that element with the
+
+previous one and it figures out what has
+
+changed
+
+and then it will update a part of the
+
+real dom to keep it in sync with the
+
+virtual dom so why does react use this
+
+so called virtual dom
+
+well because virtual dom is way faster
+
+than the regular dom
+
+the main advantage of this is that we
+
+don't have to worry about the javascript
+
+dom api and react will do all the heavy
+
+work for us now you might be wondering
+
+what are the prerequisites to learn such
+
+a great javascript library there's only
+
+one prerequisite and that is javascript
+
+if you're wondering which javascript
+
+syntax do you need to know to start
+
+learning react or why would you even
+
+learn react and not code everything in
+
+vanilla javascript then you must check
+
+out my previous video the ultimate web
+
+developer roadmap i've answered all
+
+these questions and more in that video
+
+the link to the video is going to be in
+
+the description but if you don't feel
+
+like watching the previous video i've
+
+also included all the prerequisites
+
+essential react.js concept react.js
+
+project ideas and more in the ultimate
+
+reaction as guide of course in the
+
+description completely for free i hope
+
+this makes your life just a bit easier
+
+we cannot talk about react.js without
+
+talking about components
+
+reactions is a component based frontend
+
+library which means that all parts of a
+
+web application are divided into small
+
+components a component is a small piece
+
+of the user interface
+
+every react.js application is a tree of
+
+components components let you split the
+
+ui into independent reusable parts so
+
+when you're building an application with
+
+react you'll build independent and
+
+reusable components and then you'll
+
+combine them to build a full-fledged web
+
+application
+
+let's take a look at the same example
+
+i've showed you earlier to represent
+
+what are components so imagine we're
+
+building this website
+
+how would we make it firstly we'll split
+
+the user interface into smaller
+
+components like sidebar search bar and
+
+movies which includes several single
+
+movie components with names and ratings
+
+i can't even tell you how excited i am
+
+to share this course with you extremely
+
+soon
+
+it's been months into making and i'm
+
+happy that you'll be able to learn from
+
+it soon
+
+so everyone who downloaded the reactions
+
+guide will get updates about the course
+
+and more importantly discounts if you
+
+still haven't clicked that download link
+
+in the description now is the time and
+
+talking about components in react there
+
+are two types of components
+
+functional components and class-based
+
+components
+
+let's see how does a standard class
+
+component look like firstly we import
+
+react and the structure component from
+
+react if you're a complete beginner you
+
+might wonder where are we importing
+
+react from why do we even need to import
+
+it we need to import react to be able to
+
+use the entirety of its library
+
+then we use a regular javascript class
+
+to make a react component that extends
+
+the react component already written for
+
+us in the library
+
+then we use the render method that
+
+describes what should be displayed and
+
+how should the ui look like
+
+if you don't fully understand how to use
+
+classes what are class methods and what
+
+does extents means
+
+don't worry at all
+
+class-based components are react history
+
+they're not being used at all anymore
+
+and they were entirely replaced by their
+
+simpler counterparts functional
+
+components
+
+now let's understand how the functional
+
+component is written first as usual we
+
+import react from react library nowadays
+
+you can also skip that line in the newer
+
+versions of react it's not needed
+
+anymore then we can create a function
+
+which can be a normal function arrow
+
+function named function whatever you'd
+
+prefer in this example we're using an
+
+arrow function
+
+in the function we return something that
+
+react should display
+
+that's it that is a react component you
+
+can see how easy it is you might be
+
+thinking why are we writing html when
+
+returning something the stack syntax is
+
+neither a string nor html it's called
+
+jsx
+
+jsx is used in react to describe what
+
+the user interface should look like jsx
+
+may remind you of a template language
+
+but it comes with the full power of
+
+javascript jsx produces react elements
+
+it forms the core of react syntax
+
+so to learn it better let's dive into
+
+code and set up our first react.js
+
+application there are two main ways of
+
+setting up the react environment
+
+the first one is to manually set it up
+
+using webpack and babel and the second
+
+one is to use the create react app
+
+command if you're just starting i would
+
+suggest using the second method as it
+
+saves you from time consuming setup and
+
+configuration
+
+create react app is a comfortable
+
+environment for learning react and it's
+
+the best way to start building a new
+
+single or multi-page application in
+
+react so what is create react app create
+
+react app is a simple tool or a command
+
+that generates the required files and
+
+folders to start the react application
+
+and run it in the browser
+
+it's also officially supported by the
+
+react team
+
+to run the create react app command you
+
+need to have nodejs installed on your pc
+
+node is a javascript runtime that allows
+
+you to execute js code on the server
+
+it's highly probable that you already
+
+have it installed but if you don't go to
+
+nodejs.org
+
+and download and install it after that
+
+we can create an empty folder on our
+
+desktop let's call it something like my
+
+underscore first underscore react
+
+underscore app
+
+then you can open up your code editor of
+
+choice in this case i'll be using visual
+
+studio code and you can simply drag and
+
+drop your folder into it now you can
+
+head to view
+
+and then terminal finally let's run our
+
+first command which is mpx create dash
+
+react dash app
+
+and then dot slash to install it in the
+
+current directory
+
+let's press enter you might get an
+
+additional message here because this is
+
+the first time you're using create react
+
+app but after that you should be able to
+
+see creating a new react app and then
+
+your directory this is going to install
+
+primary react packages like react react
+
+dom and react scripts this process
+
+usually takes about a minute so i'll
+
+pause the video right now and i'll be
+
+right back
+
+and there we go
+
+success created my first react app
+
+this command just generated all the
+
+files and folders needed for your first
+
+react application so let's run it you
+
+can run your application by running mpm
+
+start and then press enter this is going
+
+to run our application on localhost 3000
+
+and in a few seconds there it is
+
+rotating react.js logo
+
+with a text that says edit source app.js
+
+and save to reload that way we'll be
+
+able to modify our react.js application
+
+but before we do that we can take a
+
+minute to properly explore the file and
+
+folder structure of a react.js
+
+application over here you can see all
+
+the files and folders
+
+let's check them out
+
+the first one is package.json inside of
+
+here you can see all the dependencies or
+
+packages that your application currently
+
+has installed as you can see the core
+
+react.js packages are right here and
+
+then all the other npm packages that you
+
+install later on are going to be added
+
+here as well
+
+the code for these packages is going to
+
+be added in our huge node modules this
+
+is not the folder that you have to
+
+manually explore it's just there and it
+
+serves the code
+
+the src or source folder is where all
+
+the logic goes everything related to our
+
+app will be in the source folder
+
+this is where you'll spend most of your
+
+time developing react.js applications if
+
+we open up our public folder you'll
+
+notice that there is only one single
+
+html file and inside of this html file
+
+we have a few meta tags so i'm going to
+
+properly structure them
+
+we also have a few comments that we can
+
+delete a few link tags
+
+some kind of a big comment right here
+
+and
+
+that's it
+
+if we remove all of the unnecessary
+
+things we are left off with the simplest
+
+possible html document that has only a
+
+single div with an id of root the way
+
+react works is that all of our react
+
+components are going to get injected
+
+inside of this div with an idea fruit
+
+to properly explore that we can go into
+
+source
+
+and then index.js the starting point of
+
+every react.js application inside of
+
+here we have react-dom which we only
+
+call once in our entire react
+
+application no matter how big it is
+
+react dom is used to render our
+
+components and our entire application
+
+into the real dom more specifically
+
+into a div with an id of root this is
+
+how we're accessing the basic dom we
+
+target this div and we populate our
+
+entire react application and we inject
+
+it right here
+
+that is the base premise of how react.js
+
+works
+
+now if we go to explorer
+
+source and then app.js you can see that
+
+we have a functional component something
+
+that we've discussed before remember
+
+what i've said earlier functional
+
+components are the ones that are
+
+primarily used nowadays no more
+
+class-based madness and this code that
+
+you can see right here
+
+that is not html
+
+this is jsx because you can see it is in
+
+a js file not in a dot html file there
+
+are a few differences between html and
+
+jsx although generally it's incredibly
+
+similar
+
+one of these differences is that you can
+
+notice class name
+
+usually in html we would write that as a
+
+class
+
+but class is a reserved keyword in
+
+javascript so we had to use class name
+
+since we use jsx in react the extension
+
+of javascript we have to use classname
+
+instead of that class attribute so keep
+
+that in mind all of the similar gotchas
+
+of using jsx are also linked in our
+
+reactions guide so make sure to go for
+
+it if you want to get more information
+
+on the jsx syntax
+
+inside of curly braces you can put any
+
+valid javascript expression so in here
+
+we're dynamically assigning a logo to
+
+this image for example we can remove the
+
+text inside of this paragraph
+
+open up a pair of curly braces and write
+
+two plus two in html the only thing that
+
+you would get would be
+
+curly brace two plus two and then curly
+
+brace
+
+literally but now if we go back to our
+
+browser as you can see in here we have
+
+four and that might seem incredibly
+
+simple and not meaningful but think
+
+about the power that this represents you
+
+can write javascript code straight
+
+inside of something that looks like
+
+plain html
+
+that means that you can dynamically
+
+render real data inside of your browser
+
+isn't that cool
+
+so now let's delete this demo example by
+
+deleting all of the code inside of it
+
+we can leave the div with the class name
+
+of app
+
+and let's also delete this logo because
+
+we're not using it anymore
+
+we can also convert this function app
+
+into a const app
+
+and that is an arrow function component
+
+inside of there let's simply create an
+
+h1 that's going to say hello
+
+world
+
+or rather let's do hello react
+
+and let's save it and there we go an h1
+
+that says hello react now we can dive
+
+deeper into the syntax and explore all
+
+of the benefits that react.js offers
+
+let's go ahead and get started with the
+
+real thing before i start showing you
+
+all the benefits that react offers let's
+
+open up her browser and put it side by
+
+side with the editor so that we can see
+
+in real time the changes we're making
+
+there we go i've put the code editor on
+
+the left side and our browser on the
+
+right side so now if we type something
+
+for example hello jsm and save it you
+
+should be able to see the code update in
+
+real time so now let's explore that
+
+dynamic or reactive nature of react we
+
+can create different variables right
+
+here inside of this functional component
+
+so by saying something like const name
+
+is equal to and let's do something like
+
+john we can use this variable inside of
+
+our jsx so right here we can open up a
+
+pair of curly braces like this and
+
+simply reference this variable inside of
+
+those braces if we save that you can see
+
+hello john now this might seem like
+
+magic because this seems just like basic
+
+html but we've just injected real
+
+javascript code straight into it that is
+
+the power of react we can also do
+
+something more powerful like create
+
+different ternary expressions
+
+let's create a variable is name showing
+
+like this and that's going to be set to
+
+true
+
+right here what we can do is say hello
+
+and then we're going to check if is name
+
+showing
+
+is set to true
+
+if that is the case then we can simply
+
+show john
+
+else we can say let's do something like
+
+someone now if we save that you can see
+
+that we're showing hello john but now if
+
+we switch this variable to false
+
+is name showing false
+
+then the different part of the ternary
+
+expression is going to be ran and now we
+
+can see hello someone with this we've
+
+just made the render of our application
+
+dynamic we're gonna show a different
+
+display based on different dynamic data
+
+you wouldn't be able to do this this
+
+easily in just basic html and css of
+
+course take your time and play with this
+
+a bit you can explore all the other
+
+possibilities that react offers we're
+
+just showing the name here but you can
+
+do any kind of arithmetic like 2 plus 2
+
+is 4 that's going to show up using these
+
+expressions we can dynamically render
+
+larger blocks of code so if we open up
+
+curly braces and then check if name
+
+exists
+
+in that case we want to render
+
+this react fragment inside of these
+
+parentheses
+
+and a react fragment is just like an
+
+empty div inside of there we can put
+
+some code so let's say test for now
+
+and then of course we need to have a
+
+second part of our ternary expression
+
+and inside of there we're going to say
+
+test as well
+
+there we go we can of course see test
+
+but why do we even need this empty block
+
+so called react fragment
+
+well let's say that instead of test at
+
+the bottom we want to show something
+
+like an h1
+
+let's close it properly
+
+and there we're going to simply say test
+
+because we don't have access to the name
+
+in this block down there
+
+now let's set the name to be null so the
+
+below expression is going to run we can
+
+see the test but now what if you want to
+
+add a second h2 that's going to simply
+
+say
+
+there
+
+is no name
+
+if we save that you're going to see a
+
+really often appearing error
+
+ejection jsx elements must be wrapped in
+
+an enclosing tag
+
+so this is a rule that react has if you
+
+want to render two different elements
+
+one next to another you need to wrap
+
+them in a so-called react fragment so
+
+right here what we can do is just wrap
+
+this in a fragment like so and then we
+
+won't have an error anymore
+
+there we go so below we're saying there
+
+is no name and right here we can say h1
+
+and of course we can render the name
+
+inside of the curly braces
+
+now if we change this to jane
+
+save it you'll be able to see jane
+
+and otherwise if there is no name you'll
+
+be able to see this block of code down
+
+there and right now we're working with
+
+just two different tags you can do the
+
+same thing with thousands of lines of
+
+code and completely change the user
+
+interface when something changes for
+
+example you can have a variable is user
+
+logged in
+
+and let's say that the user is logged in
+
+in that case you can show some data and
+
+display his user profile else you can
+
+simply render a login button that just
+
+shows you that there is a lot of
+
+possibilities
+
+now let's dive into one of the core
+
+react topics and that is components we
+
+can create many different components and
+
+then import them into our larger
+
+components so for example we can create
+
+a new component just above the current
+
+one that's going to be called person
+
+const person is going to be a functional
+
+component
+
+and it's going to have a return
+
+statement
+
+for now let's simply return an h1
+
+that's going to render let's do name
+
+and then that's going to be set to john
+
+and then we're going to wrap it in a
+
+react fragment so that we can add
+
+something below that we can simply say
+
+h2
+
+and then we're going to do last name
+
+is going to be do
+
+as well as the age
+
+and let's do something like 30. so this
+
+is our person component and a component
+
+is a piece of code that returns or
+
+renders some jsx
+
+and in here we can call our person
+
+component by its name take a look it's
+
+called person the only thing you have to
+
+do open up a code brace
+
+and start typing person
+
+and then simply close it as a
+
+self-closing tag
+
+as soon as you do this you'll be able to
+
+see that all of the code from the above
+
+component got imported or injected
+
+straight right here inside of the app
+
+isn't that crazy
+
+one advantage of creating a custom
+
+component and then referencing it right
+
+here is that we can duplicate this line
+
+five times
+
+and with that we have five percent
+
+components
+
+of course if we wanted to write this
+
+manually we would have to copy all of
+
+these three lines but now you might be
+
+wondering why would we ever do this this
+
+data is the same how can we change this
+
+do we have to manually change everything
+
+but then if we change something here
+
+isn't it going to change in all of them
+
+and that is true but now we came to a
+
+really important part of react and that
+
+is props
+
+props allow you to pass dynamic data
+
+through react components
+
+props are just arguments that you pass
+
+into react components
+
+they are passed via attributes
+
+they are just a shorter way of saying
+
+properties
+
+so in here if we pass a name
+
+is equal to and we can pass a string of
+
+john we can accept this prop inside of
+
+our person component and how can we do
+
+that
+
+well every component has a built-in
+
+props object
+
+and right here we can reference that
+
+props object by saying props dot and
+
+then
+
+name
+
+so why did we do name here because
+
+that's how we call this prop prompts
+
+that name
+
+now if we save this you're gonna notice
+
+that only the first component has our
+
+name and all the other ones are empty
+
+that's because we didn't pass a
+
+different name to any of our other
+
+components what of course we can do is
+
+pass the last name as well so let's say
+
+last name is equal to do and also let's
+
+do age is equal to 25. now we can repeat
+
+the process
+
+last name is going to be props that last
+
+name notice how i'm putting this in
+
+curly braces and then in here that's
+
+going to be props dot
+
+age
+
+and if we save that you're going to
+
+notice that only our first component has
+
+all the data and the other ones are
+
+empty
+
+so now let's pass some other data like
+
+name is equal to jane
+
+you can do it just like this without
+
+curly braces if it's just a string
+
+there we go that works as well
+
+but if you're passing some dynamic
+
+expressions like let's do age is equal
+
+to two plus two in that case you have to
+
+use curly braces but in this case we
+
+were just fine with using normal strings
+
+and as you can see we can use both
+
+double and single quoted strings it
+
+doesn't matter now let's remove some of
+
+our people let's copy our john person
+
+and let's just simply rename it to
+
+something like mary
+
+doe and that's going to be 24
+
+there we go now we have just two
+
+different people and every single person
+
+is completely different when it comes to
+
+data now of course imagine if each one
+
+of these people is going to be an entire
+
+user profile it would have much more
+
+than just three packs it would have an
+
+image all different kinds of properties
+
+hobbies about sections many more other
+
+components and class names
+
+so if that were the case and if we
+
+didn't use custom components then we
+
+would have to copy and paste all the jsx
+
+every single time but if we put all of
+
+that code into a component we can simply
+
+call it every time in a single line and
+
+pass new dynamic properties based on a
+
+different person
+
+of course if you have a lot of
+
+properties feel free to space them out
+
+in a new line like so that way it's
+
+going to be just a bit easier to read
+
+there we go
+
+now that we've learned about props let's
+
+learn about react state
+
+we can remove all of these people right
+
+here
+
+and also remove our custom component
+
+state in react is a plain javascript
+
+object used by react to represent a
+
+piece of information about the
+
+component's current situation it is
+
+completely managed by the component
+
+itself
+
+so how can we actually create state in
+
+react
+
+first we have to import
+
+in curly braces a so called use state
+
+hook
+
+from react
+
+this is going to allow us to use the
+
+stay of course and before we actually
+
+call this use state let me show you a
+
+scenario where you're really going to
+
+notice the purpose of state
+
+let's create a counter
+
+a counter is going to have two buttons
+
+this one that's simply going to say
+
+minus
+
+it's going to have some kind of an h1 in
+
+the middle that's going to show the
+
+count which is going to start at zero
+
+and then we're going to have one more
+
+button which is going to have a plus
+
+icon and it's going to increment that
+
+count we can see that minus is on the
+
+top and plus is on the bottom
+
+right now if we click this nothing is
+
+going to happen so we have to use state
+
+right here at the top of our component
+
+we can say const
+
+and then use a concept of array
+
+destructuring that is how state works so
+
+we create a pair of square brackets
+
+we say equal to and then call the use
+
+state as a function
+
+whenever you call something as a
+
+function and it starts with use in react
+
+we call that a hook
+
+now the first part in the square
+
+brackets pair is going to be the name of
+
+that state so let's call it counter
+
+the second part is going to be a setter
+
+function
+
+and we can call it set counter
+
+a good rule of thumb is that you call
+
+the second variable the same as you call
+
+the first one but add the set in front
+
+because it is a setter function for the
+
+first variable
+
+now inside of the use state you provide
+
+the initial value which is going to be
+
+0. now we can use this counter just as a
+
+normal javascript variable
+
+right here let's reference it
+
+counter
+
+and as you can see
+
+nothing changed that's because the
+
+initial state is still zero
+
+so now we're going to learn about events
+
+an event is an action that can be
+
+triggered as a result of the user action
+
+or some kind of a system generated event
+
+for example a mouse click or a button
+
+press is an event and here is how we can
+
+handle events in react
+
+on this button you can add an on click
+
+property written like this
+
+there we're going to have a callback
+
+function
+
+a callback function is the one that
+
+simply doesn't have a name it's here and
+
+it's just waiting for some kind of a
+
+command
+
+right here we can write an inline code
+
+by simply saying alert
+
+clicked if we save this you can see that
+
+if we click on a minus button we're
+
+going to get an alert that says clicked
+
+that means that we read the event
+
+properly but now on the click we don't
+
+simply want to alert something we want
+
+to change the state
+
+for that we're going to use the setter
+
+function
+
+set counter
+
+what we can do is we can set it to
+
+something like -5 or any other value and
+
+if we now click this you can see
+
+it gets reset dynamically the code
+
+changes
+
+now how can we lower the count by one
+
+each time that we press a button
+
+well inside of the set counter we're
+
+going to create a callback function
+
+and right here we have access to
+
+something known as a pref count
+
+this is just a parameter of the set
+
+state you can call it however you want
+
+but a good practice is to call it prev
+
+as in previous and then the name of your
+
+state
+
+and what we can do is simply call the
+
+pref count and decrement it by 1.
+
+now if we save this and reload the page
+
+as you can see we can keep clicking the
+
+button and the count changes
+
+we can duplicate this line
+
+paste it below our counter
+
+and in here the only thing we have to
+
+change is to add a plus right here
+
+as well as right here now we can
+
+increment our counter as well
+
+and i know this is a small application
+
+but it's dynamic you're clicking on it
+
+and you're changing the state and
+
+therefore re-rendering the view again a
+
+really important thing is that all of
+
+this is happening without a website
+
+reload if you keep tracking this
+
+keep looking at this reload button when
+
+i reload it's going to change
+
+but now if i keep clicking it remains
+
+the same which means that the website is
+
+changing without a reload and you might
+
+think of course this is a simple
+
+application nothing has to reload here
+
+and you would be right if you think that
+
+but imagine all of the complex websites
+
+that have tons of functionality a lot of
+
+moving pieces and everything else the
+
+situation is going to be the same if
+
+you're using react then you can update
+
+everything on the page without needing a
+
+page reload that is amazing
+
+when we started talking about state we
+
+immediately mention hooks because we
+
+cannot use the state without using this
+
+react hook
+
+and there are many other hooks as you
+
+can see we have the three basic hooks as
+
+well as some of the additional hooks
+
+by the way i'm looking at this in the
+
+official react documentation i would
+
+strongly encourage you to go through
+
+their docs at least through the main
+
+concepts from the hello world all the
+
+way to thinking and react
+
+their documentation is phenomenal
+
+definitely make sure to go through it as
+
+the practice after watching this video
+
+so with that said let me also show you
+
+the second most used react hook which is
+
+use effect
+
+we can simply import it at the top as we
+
+imported the first one
+
+use effect
+
+and it's going to get called a bit
+
+differently
+
+we type use effect right here
+
+call it as a function and then it
+
+accepts one more function as the first
+
+parameter again a callback function
+
+you can see that we're using a lot of
+
+es6 syntax
+
+array destructuring
+
+import syntax arrow functions and more
+
+so i would strongly encourage you to get
+
+comfortable with javascript es6 plus
+
+before you dive into react use effect
+
+allows us to do something on some kind
+
+of an effect or let's say on some kind
+
+of an event
+
+so this code right here is going to get
+
+run as soon as the page loads so let's
+
+say reload there we go i saved it and i
+
+get an alert that says reload if i
+
+reload the page one more time it's going
+
+to happen again because this code
+
+happens as soon as this component
+
+renders so using this use effect and
+
+knowing that this is going to happen at
+
+the start how do you change our counter
+
+our state to be 100 as soon as the page
+
+loads
+
+if you wanted to do something like this
+
+counter is equal to 100
+
+that's going to cause a major issue
+
+we cannot see an error yet but that's
+
+because we're breaking the most
+
+important rule of react
+
+and that is
+
+never modify state manually never mutate
+
+the state
+
+counter is not just a normal variable it
+
+is a part of the react state
+
+and react state can only be changed
+
+using its own setter function
+
+so this here is strictly forbidden and
+
+as you can see the app doesn't work
+
+so let's simply call a set
+
+counter
+
+and this is how you would set the
+
+counter to 100.
+
+as you can see it is 100 initially and
+
+now we can modify it
+
+but something happens we cannot really
+
+modify it it seems that this use effect
+
+is happening too often and as soon as we
+
+click it it brings it back to 100.
+
+so there is the second parameter to the
+
+use effect which is called a dependency
+
+array
+
+if we now save this
+
+we've just left our dependency array to
+
+be empty
+
+so now if we modify this
+
+we can clearly do that
+
+the value only gets set at the start
+
+that's because when the dependency array
+
+is empty
+
+the code inside of here more
+
+specifically inside this function is
+
+going to only happen at the initial load
+
+of the component
+
+but if we add some kind of a variable
+
+here
+
+like a counter
+
+then this code is going to update every
+
+time that the variable inside of this
+
+array changes
+
+we would got into an infinite loop if i
+
+tried running this
+
+that is because if i initially set the
+
+counter to something and then i keep
+
+changing it it's going to continuously
+
+run because this function is changing
+
+the counter and then the counter recalls
+
+it that is not a good practice so what
+
+we can do is simply alert something
+
+whenever the counter changes
+
+let's say
+
+you've
+
+changed the counter
+
+to
+
+and then let's simply say
+
+counter
+
+there we go
+
+now if we save this you change the
+
+counter to 100
+
+let's reload the page you change the
+
+counter to zero you change the counter
+
+to 1
+
+2 and so on
+
+this is not a good user experience
+
+definitely
+
+but the only thing i wanted to show you
+
+here is that you can call some code
+
+whenever something happens in your react
+
+application by simply providing that
+
+variable here and whenever that variable
+
+changes then you can call the code
+
+inside of the use effect with that we've
+
+learned the three most important things
+
+that react offers and that is components
+
+state
+
+and props of course alongside that we
+
+also learned hooks more specifically the
+
+used state and the use effect hook
+
+and we also talked about events more
+
+specifically the on click event i'm
+
+pretty sure that you are ready to build
+
+your real reactions project right now
+
+so what we can do is open up our file
+
+tree by clicking here
+
+and we can completely delete the source
+
+code because we don't need many of these
+
+files right here so let's go ahead and
+
+right click click delete
+
+press right click right here and create
+
+a new folder called
+
+src now let's test your knowledge
+
+what does every source component needs
+
+to have
+
+what is one file that absolutely needs
+
+to be there
+
+that is going to be
+
+index.js
+
+inside of there we import react from
+
+react
+
+as well as import
+
+react dom
+
+from react dom
+
+then we can say import app
+
+and that app is coming from that slash
+
+app
+
+of course we haven't yet created this so
+
+let's go ahead and create a new file
+
+which is going to be called app.js
+
+inside of there we can import
+
+react from react
+
+we can create our app which is the main
+
+functional component that looks like
+
+this
+
+our app is going to have a return
+
+statement
+
+and then inside of that return for now
+
+we can simply return h1 that's going to
+
+say
+
+app
+
+let's add a semicolon here and of course
+
+let's do export default app
+
+we have to export every single one of
+
+our components so that we can then call
+
+it from somewhere else in this case
+
+we're importing it inside of our
+
+index.js file
+
+and inside of our index.js as we learned
+
+before we have to do react-dom
+
+dot render
+
+and then we have to pass in the
+
+component we want to render which is in
+
+this case the app component
+
+and then we have to trigger
+
+document.getelementbyid
+
+and then pass a string of root
+
+this is going to trigger our div with an
+
+id of root and it's going to inject our
+
+entire react application right inside of
+
+it
+
+and finally if you reload the page you
+
+should be able to see app right here
+
+sometimes react messes up a bit when you
+
+delete the entire source folder so you
+
+might need to go to view and then
+
+terminal and then press ctrl c and then
+
+y like this
+
+and then just restart application by
+
+running the npm start command
+
+whenever you want to restart it or close
+
+it ctrl c and then y
+
+there we go with that said now we have
+
+an empty working environment just the
+
+source with the app and index.js
+
+and we are ready to create our
+
+application believe it or not in this
+
+video you're going to build a simplified
+
+version of the film power project
+
+so this is the film part project it has
+
+nice animations a central card all of
+
+the different categories
+
+movie details information animations
+
+and even voice artificial intelligence
+
+of course dark mode is there as well
+
+but we're going to build this which is a
+
+simplified version of the filmpira
+
+application called movieland
+
+there you get access to all the movies
+
+that you search for
+
+in here we have batman let's try to go
+
+with something like shrek that should be
+
+good
+
+there we go
+
+let's try to go with something like
+
+superman as well
+
+and just click search
+
+and you immediately get all of the
+
+latest superman movies and you can
+
+scroll through them
+
+of course the application is fully
+
+mobile responsive so if you right click
+
+click inspect and then click this little
+
+icon right here that's going to toggle
+
+the device toolbar and you can see that
+
+your application is fully mobile
+
+responsive so what do you say let's go
+
+ahead and get started with implementing
+
+everything you've learned so far
+
+managing state
+
+using different components
+
+props and so much more let's pull our
+
+browser on the side and let's get
+
+started by going into our app.js
+
+i'm going to keep this website open just
+
+for reference
+
+when it comes to film par we can close
+
+that tab
+
+by the way if you're interested in
+
+learning react to extremely advanced
+
+levels while building this great
+
+application definitely make sure to
+
+click the link in the description join
+
+our newsletter
+
+to be the first one to get into the
+
+course
+
+with that said we can now close this and
+
+start transforming our app into movie
+
+land
+
+alongside using state hooks and so much
+
+more we're gonna also use an external
+
+api an application programming interface
+
+that is going to give us access to data
+
+about these movies
+
+so that might be a good starting point
+
+you can head to omdb api.com forward
+
+slash api key the link is going to be
+
+down in the description
+
+then you can choose your account type as
+
+free
+
+and enter your email
+
+i'm going to do javascript mastery enter
+
+my email right here and you can type use
+
+building
+
+a movie app and click submit
+
+in a few seconds you're going to receive
+
+a verification link to activate your key
+
+to your email address
+
+once you get the email you'll have to
+
+activate your key by clicking right here
+
+you're gonna see a message that says
+
+your key is now activated
+
+and then you can go back to your email
+
+and copy your api key
+
+and paste it as a comment right here
+
+because we're definitely going to use it
+
+later on
+
+now we can close this
+
+close this as well and go back to our
+
+application
+
+so let's explore the ways in which we
+
+can call this api to get all the data
+
+about movies
+
+we're going to create a static variable
+
+called api underscore url
+
+and that's going to be a string that's
+
+equal to http
+
+colon for slash forward slash
+
+www.omdbapi.com
+
+question mark api key is equal to and
+
+then you can simply copy your key and
+
+paste it here
+
+that's going to be our api url
+
+now we can use that from inside of our
+
+component to gather the data
+
+more specifically we want to fetch the
+
+data from this api as soon as our
+
+component loads
+
+do you know which hook can we use for
+
+that
+
+it's going to be the use effect hook so
+
+right here we can import the use effect
+
+hook from react
+
+let's call it as we learned
+
+use effect
+
+accepts a callback function and an empty
+
+dependency array as the second one if we
+
+only want to call it at the start
+
+now inside of there we're going to call
+
+a function that's going to fetch our
+
+movies
+
+so just at the top of our use effect
+
+let's create a new function
+
+const
+
+search
+
+movies
+
+is equal to
+
+an async arrow function
+
+async stands for asynchronous data which
+
+means that it takes some time to fetch
+
+these movies
+
+and the search movies is going to accept
+
+a search title that we want to search by
+
+like superman or any other title
+
+there we can say const
+
+response
+
+is equal to
+
+await fetch
+
+and then in here we can use a template
+
+string
+
+you can do that by using the backticks
+
+on my keyboard it is a key left to the
+
+one key
+
+there we can dynamically specify the api
+
+url so api underscore url and then say
+
+and
+
+s
+
+is equal to
+
+and then one more time in here we want
+
+to specify the title
+
+so this is going to call our api now
+
+once we get the response we have to get
+
+the data from it by saying const data is
+
+equal to a weight
+
+response dot json
+
+now inside of this data object we should
+
+have the data about the movies so let's
+
+simply console.log it for now
+
+kansa log
+
+data
+
+we can open up our console
+
+go to inspect
+
+and console
+
+right here nothing is happening because
+
+as you can see we're never calling our
+
+search movies
+
+so what we can do is simply call it
+
+inside of our use effect and let's also
+
+provide it a title which is going to be
+
+a string of your favorite movie feel
+
+free to put any title in there in this
+
+case i'm going to go with spider-man
+
+and save it
+
+as soon as we save the file we're going
+
+to notice that we get back the search
+
+the response and total results
+
+we only need the movies array so we can
+
+console.log data dot search
+
+and now we get only an array with 10
+
+superman movies that's great that means
+
+that the api fully works
+
+but now we need to be able to render
+
+that data and show it inside of our
+
+application to make your life easier i'm
+
+going to provide you with the entire css
+
+file for this entire application
+
+today's focus is to learn react and
+
+you're going to do that with this
+
+project but you don't have to manually
+
+write every css line so what you can do
+
+is create a new file called app
+
+dot css and then in the link below this
+
+video there's going to be a github gist
+
+containing the code for the entire
+
+app.css as well as app.js you can simply
+
+copy the app.css and paste it right here
+
+this is going to contain the styling for
+
+our project there's also going to be a
+
+search dot svg so let's create a
+
+search.svg component and let's simply
+
+paste what you copied from the github
+
+gist down below this is just going to be
+
+a search icon now that we have the
+
+styles we of course have to import them
+
+as well as import the search icon we can
+
+do that by saying import in a string
+
+dot slash app.css
+
+as soon as we do that you're going to
+
+notice that the styles are immediately
+
+applied and while we're here let's also
+
+import the search icon from
+
+dot slash
+
+search dot svg
+
+great we're going to use this later on
+
+now we are ready to start creating the
+
+jsx of our application so let's start
+
+with a div we're going to wrap
+
+everything inside of a div
+
+and that div is going to have a class
+
+name equal to app inside of there we're
+
+going to have an h1 element
+
+that's going to be the name of our
+
+application let's call it movie land
+
+and it gets positioned nicely in the
+
+middle
+
+this is like writing html but you're
+
+going to notice the power of react as
+
+soon as we start making it dynamic
+
+below that we can create a div that's
+
+going to have a class name
+
+keep in mind this is class name not just
+
+class as it is in html
+
+and that's going to be equal to
+
+search inside of this div we're going to
+
+have an input field
+
+an input is a self-closing tag that has
+
+to have a few properties first of all it
+
+has to have a place holder which is
+
+going to be equal to search for movies
+
+if we save that you're going to notice
+
+this nice input appear right here an
+
+input in react needs to have another two
+
+things which are crucial
+
+the first thing is going to be value
+
+for now let's set it as a static string
+
+of superman
+
+as soon as we save that you're going to
+
+notice that this input immediately has
+
+the value of superman but now if you try
+
+typing something you won't be able to
+
+because the value is statically set
+
+so how do we change it for that we have
+
+to have an onchange which accepts a
+
+callback function
+
+that looks like this
+
+for now let's leave it empty
+
+we're just going to make it static for
+
+now and then later on once we implement
+
+the state we're going to make this
+
+actually changeable and that's going to
+
+recall our api
+
+below our input we're going to have a
+
+self-closing image tag
+
+and the source is going to be
+
+search icon of course every image tag
+
+also needs to have an alternative tag
+
+which is useful for screen readers so we
+
+can say search and save it and there we
+
+go now we have this magnifying glass
+
+icon
+
+our magnifying glass icon is also going
+
+to serve a purpose of a button so we can
+
+add an onclick property right here and
+
+also add an empty callback function
+
+because later on we're going to be
+
+calling our above api straight from here
+
+but for now we're just building the jsx
+
+so we don't care about that for now
+
+now we can go below this search div and
+
+create a new div
+
+this div is going to have a class name
+
+equal to container
+
+so what we can do right now to test this
+
+out is go to inspect
+
+go to console
+
+array let's take one of these spiderman
+
+movies
+
+and let's copy the entire object by
+
+right clicking and clicking copy object
+
+we can go to the top
+
+and say const
+
+movie 1 is equal to and then we can
+
+paste that
+
+right here we're going to get the data
+
+for that specific movie
+
+we're going to use this as static data
+
+just to render out something so that we
+
+know what jsx are we writing
+
+so inside of this container what we can
+
+do is create a div that's going to have
+
+a class name
+
+equal to movie
+
+inside of there we're going to also
+
+render a div
+
+and inside of that div we're going to
+
+render a paragraph
+
+there we want to show the year of the
+
+movie so what we can do
+
+is say movie 1
+
+dot year
+
+now if you save that you can notice we
+
+got 2012 right here
+
+below this div we're going to create one
+
+more div
+
+and this is going to be the div that's
+
+going to contain our image
+
+our image is going to have the src or
+
+source property equal to
+
+movie 1
+
+dot
+
+poster not poser that's going to be
+
+poster and an alternative tag which is
+
+going to be equal to
+
+movie 1
+
+dot and that's going to be title
+
+now let's save this
+
+and it looks like we cannot see the
+
+image for this movie which is great
+
+because it allows us to add an extra
+
+check to make sure that there is an
+
+image
+
+so what we can do is say
+
+if poster
+
+is not equal to
+
+n
+
+a
+
+this is how this api declares movies
+
+that have no image
+
+then we can render a movie that poster
+
+right
+
+but
+
+if there is no image
+
+then we can render https colon forward
+
+slash forward slash via dot
+
+placeholder dot com forward slash 400.
+
+this is a placeholder image and we get a
+
+nice error from react saying that poster
+
+is not defined so this is going to be
+
+movie 1 dot poster
+
+and there we go we have a 400 by 400
+
+placeholder image we're going to provide
+
+this placeholder image if the api
+
+doesn't provide us with a real movie
+
+image with that said the most important
+
+thing that we can add below this div is
+
+going to be another div that's going to
+
+have a span element inside of it and
+
+there we can render movie 1 dot type
+
+if we save that you're going to notice
+
+that the type of this movie is a movie
+
+it can also be a tv show
+
+below that span we can render our last
+
+element which is going to be an h3
+
+that's simply going to render the movie
+
+one dot title
+
+with the capital t if we save that we're
+
+gonna notice amazing spider-man syndrome
+
+movie 2012.
+
+now we have the look of our single movie
+
+but this is not that good because it's
+
+just one and more importantly the data
+
+for that movie is static
+
+so how can we fetch the data for all the
+
+movies and then display them here
+
+the first step in doing that would be
+
+extracting the code for this movie into
+
+its own custom component
+
+and the reason we're doing that is
+
+because if you think about it we're
+
+going to have many of these cards
+
+they're going to be repeated quite often
+
+so instead of doing something like this
+
+we would have to have hundreds of lines
+
+to show just a few movies what we can do
+
+is just create a custom component and
+
+that way we'll be able to do it almost
+
+in a single line
+
+so let's copy this entire div with a
+
+class name of movie
+
+then go to our file explorer and create
+
+a new file inside of the source folder
+
+called
+
+movie
+
+card
+
+dot
+
+jsx now you might be wondering why did i
+
+add a jsx extension to this file
+
+in react whenever you create a new react
+
+component
+
+jsx extension is preferable it adds this
+
+react logo on the left side and that's
+
+basically it there isn't any difference
+
+between a js file and a jsx file i
+
+usually add a jsx file for any component
+
+that i create in react
+
+and it's going to be the same it's going
+
+to be import
+
+react
+
+from react
+
+then we're going to create a component
+
+const movie card
+
+is equal to a functional component
+
+notice how the file name and the
+
+component name are the same
+
+this is not a necessity but it's
+
+definitely a good practice
+
+then we can render the return right here
+
+and then inside of the return we can
+
+paste what we copied we can also hold
+
+ctrl and alt and then press arrow down a
+
+few times and then we can indent this
+
+properly
+
+there we go now we can export
+
+default
+
+movie card
+
+and we can also notice that right now we
+
+don't have access to this movie one dot
+
+something so we're going to potentially
+
+pass that over through props you already
+
+know the drill we're getting access to
+
+the props right here
+
+but just so that we don't have to repeat
+
+ourselves props that something every
+
+time what we can do is destructure the
+
+props
+
+use object destructuring
+
+so that means simply put a pair of curly
+
+braces here and then get something that
+
+you passed inside of those props so now
+
+we have our movie component the same as
+
+we had our person component before but
+
+it's in a separate file
+
+so inside of the app.js we can now
+
+import at the top
+
+import
+
+movie card
+
+from
+
+dot slash
+
+movie card
+
+and now as we learned
+
+instead of this entire div we can simply
+
+call a movie card
+
+and call it as a self-closing
+
+component but of course we also have to
+
+pass in a prop called movie one is equal
+
+to
+
+movie one
+
+and if we do that and go back to our
+
+application
+
+you can see that we have the same thing
+
+we've had before just a single movie
+
+card
+
+but what we've done right now is going
+
+to make our life so much easier later on
+
+once we want to map over all of our
+
+movies
+
+the first step in doing that is getting
+
+our movies from right here from our
+
+console log all the way to here where we
+
+can actually map over them
+
+so what we can do is create a new state
+
+we can say const movies
+
+and set movies
+
+is equal to
+
+that's going to be equal to the call of
+
+the use state hook
+
+of course we have to import it at the
+
+top that's going to be
+
+use state
+
+next to use effect
+
+and we can set the default value of our
+
+movies which is going to be an empty
+
+array
+
+this is going to give us access to the
+
+set movies setter function
+
+and instead of console logging it now we
+
+can pass the data dot search into our
+
+set movies
+
+of course that gives us access to our
+
+movies so now we can dynamically pass
+
+movies and then zero into our movie one
+
+and this is going to allow us to
+
+populate the movies
+
+so what we can do right now
+
+is at the bottom right here open a
+
+dynamic block of code using parentheses
+
+and check if movies
+
+question mark dot
+
+length
+
+is greater than zero
+
+if that is the case
+
+then we want to render our movie card
+
+so let's take this movie card and put it
+
+right here
+
+let's indent this properly
+
+and then else
+
+if that is not the case so if there are
+
+no movies
+
+then we want to render something else
+
+and that something is going to be a div
+
+so we can say div right here
+
+give it a class name equal to empty
+
+and then create an h2 element inside of
+
+there that's going to say no
+
+movies found
+
+and we can save that
+
+and nothing's changed that's because we
+
+actually have movies in our array
+
+we would only see this if the movie
+
+array was empty
+
+so considering we do have the movies why
+
+are we still seeing this one static card
+
+let's fix that immediately
+
+what we can do is instead of showing
+
+this one single card
+
+we can open a dynamic block of code
+
+and then map over movies by saying
+
+movies.map
+
+and then we can map over them we're
+
+usually mapping over arrays which are
+
+plural and then inside of there we're
+
+gonna get a singular movie for the each
+
+iteration of the map so what do we want
+
+to render for each iteration of the map
+
+that is going to be a movie
+
+card component
+
+if we save that we're going to get an
+
+error because we're not passing the
+
+movie prop so let's pass a movie prop
+
+equal to movie
+
+now this is going to dynamically change
+
+but of course we have to go right here
+
+and we have to change this into movie
+
+of course we have to change it in every
+
+single other place as well the movie one
+
+was just a placeholder
+
+there we go we also have to change it
+
+here as well
+
+and with that we're dynamically looping
+
+over our movies array which is fetched
+
+from an api we're taking each individual
+
+movie and we're dynamically passing it
+
+as a prop
+
+to our movie card
+
+and that's going to result in the render
+
+of all of our movies
+
+some of these movies don't have an image
+
+but don't worry about that at all that
+
+is api's fault
+
+now we can kind of tidy this up a bit by
+
+putting this right here
+
+putting this here as well
+
+we can fix the indentation
+
+if we go ahead and move everything one
+
+step to the left
+
+there we go
+
+and this is already looking much better
+
+our next step is making the search
+
+functionality work and for that we're
+
+gonna need another state
+
+so this might be also something new to
+
+you you can have multiple states and
+
+even multiple use effect hooks per one
+
+component
+
+there is no limit
+
+so right here let's say const
+
+search term
+
+as well as the set search term
+
+is equal to you already know the drill
+
+use state and then we're going to pass
+
+in an empty string because our search
+
+term at the start is going to be empty
+
+what we can do then is inside of our
+
+input dynamically change our search term
+
+so our value is not going to be static
+
+anymore we're going to use curly braces
+
+and we're going to change that to search
+
+term
+
+so now it's dynamic
+
+as you can see it's empty at the start
+
+so we can only see a placeholder to be
+
+able to change it we need to do a
+
+similar thing we've done before with the
+
+click event when we changed out counter
+
+so we need to set the search term
+
+and then we call it and pass in the e
+
+dot target
+
+dot value
+
+and that e we're talking about is coming
+
+from the callback function right here
+
+that is the event
+
+right here not sure why i have set
+
+service that was supposed to be set
+
+search term
+
+that's much better
+
+and now we can actually type into here
+
+so if i type batman you will be able to
+
+do that the question is how can we use
+
+that state to dynamically re-render our
+
+array of movies
+
+for that we're going to use this image
+
+more specifically the on click listener
+
+we can recall our search movies function
+
+and pass in a new title
+
+we can do that by calling search
+
+movies
+
+and then we can pass
+
+what
+
+not a specific title which is static but
+
+rather we can pass in
+
+the search term which is dynamic state
+
+so now every time that we type something
+
+in here and click the button the state
+
+is going to dynamically change
+
+and that is looking great
+
+you can see we can hover over it to see
+
+the year also more details
+
+and we have all of the movies right here
+
+it looks great on mobile devices
+
+and it looks great on desktop devices as
+
+well
+
+this might be the first react
+
+application you've done
+
+congratulations
+
+i hope that the ease of development of
+
+this little app
+
+showed you that react is definitely
+
+something you want to learn and be an
+
+advanced developer in
+
+i've been a react developer for many
+
+years now and i can definitely say it's
+
+my personal preference
+
+the ease of development and the ability
+
+to scale your applications are just
+
+amazing when working with react and also
+
+the developer workflow is quite nice you
+
+can code html here and you can combine
+
+javascript immediately with css and html
+
+we've learned quite a lot we've learned
+
+about state about use effect about
+
+components
+
+props and much more i hope you've liked
+
+this react crash course
+
+this is just the beginning of your
+
+journey here in javascript mastery we've
+
+created countless more more advanced
+
+react projects which i'm sure you're
+
+going to love
+
+so just keep learning and soon enough
+
+you'll be able to build all of these
+
+projects
+
+the filmpira project is designed to help
+
+you learn from their beginnings to more
+
+advanced topics so stay on the lookout
+
+that is coming soon
+
+if you're not watching this video at the
+
+time of the release it's possible that
+
+it's already out so definitely make sure
+
+to check out the description and that
+
+was it for this video we have learned
+
+about state hooks props and so much more
+
+you've also built this great application
+
+and you're ready to dive into more
+
+advanced react topics
+
+of course the entire roadmap of how you
+
+can advance and react is down in the
+
+description inside of the react guide
+
+feel free to download it and also let me
+
+know your thoughts in the comments i'm
+
+looking forward to hearing your thoughts
+
+on what do you want the next video to be
+
+if you have any thoughts just share them
+
+that's going to be it for this video i
+
+hope you enjoyed it and have a wonderful
+
+day
+
+[Music]
+
+you
+

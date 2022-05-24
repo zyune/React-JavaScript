@@ -34,3 +34,26 @@ const Example=() =>{ //This is a function
 }
 ```
 While talking about Functional components. The object the functional components return is a JSX object. Jsx is used in react to describle what the user interface should look like? It comes with the full power of javascript , jsx produces react elements, it form the core of react syntax.
+
+## Tips for react
+1. package json. You can see all dependencies or packages that your application is currently installed. The core react.js package are ```react```, ```react-dom```,```react-scripts```.
+2. The other npm packages that you installed latter on will be added in ```package.json``` as well. The code of those package will be in node_modules.
+3. we do most of our development work in src folder . In public folder, we can only see one index.html. There is only a single div with the id of root.All of our components are going to get injected inside of this div
+```html
+// index.html
+<div id='root'></div>
+```
+4. src/index.js ----> This is the starting point of every react.js application. We have react DOM in index.js. And we only call it once in our entire react application, no m atter how big it is. React dom is used to render our components and our entire application into the real dom.More specifically, into a div with an id of root.
+
+** This is how the react dom in index.js looks like.**
+```JavaScript
+// index.js
+import ReactDOM from 'react-dom/client';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+```
